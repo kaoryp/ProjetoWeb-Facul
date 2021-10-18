@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<tr>
+		<td><div id="top">
+				<a href="#DadosPessoais">Dados Pessoais</a> <a href="#Formacao">Formação
+					Academica</a> <a href="#Atuacao">Atuação Profissional</a>
+			</div>
+			<p>
+			<form action="http://localhost:8080/WebProject/index.jsp" method="post" value="CadCurriculo">
+				<table border="1">
+					<tr>
+						<td colspan="2"><h4 align="center">
+								Dados Pessoais<a name="DadosPessoais"></a>
+							</h4></td>
+					</tr>
+					<tr>
+						<td>Nome:</td>
+						<td><input type="text" name="nome"></td>
+					</tr>
+					<tr>
+						<td>Sexo:</td>
+						<td>Masculino <input type="radio" name="sexo"
+							value="Masculino"> Feminino <input type="radio"
+							name="sexo" value="Feminino"></td>
+					</tr>
+					<tr>
+						<td>Endereço:</td>
+						<td><input type="text" name="endereco"></td>
+					</tr>
+					<tr>
+						<td>CEP:</td>
+						<td><input type="number" name="cep"></td>
+					</tr>
+
+					<tr>
+						<td>Número: <br> E-mail:
+						</td>
+						<td><input type="number" name="numero"> <br> 
+						<input type="email" name="email"></td>
+					</tr>
+
+				</table>
+
+				<table border="1">
+					<tr>
+						<td colspan="2"><h4 align="center">
+								Formação Academica<a name="Formacao"></a>
+							</h4></td>
+					</tr>
+					<tr>
+						<td><textarea id="formacao" name="formacao" rows="4"
+								cols="29"></textarea></td>
+					</tr>
+
+				</table>
+
+				<table border="1">
+					<tr>
+						<td colspan="2"><h4 align="center">
+								Atuação Profissional<a name="Atuacao"></a>
+							</h4></td>
+						<tr>
+						<td><textarea id="atuacao" name="atuacao" rows="4"
+								cols="29"></textarea></td>
+					</tr>
+				</table>
+
+
+				<input type="submit" value="cadastrar">
+			</form>
+</body>
+</html>
